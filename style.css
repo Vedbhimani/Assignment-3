@@ -1,0 +1,164 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Nanum Gothic', sans-serif;
+    background-color: #ffffff;
+}
+
+.purple{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'EB Garamond', sans-serif;
+    font-size: 4vh;
+    color:#55099c;
+}
+
+.seperateeffect-container {
+    display: inline-block;
+}
+
+.seperateeffect-container:hover .seperateeffect1 {
+    transform: rotate(-25deg);
+}
+
+.seperateeffect-container:hover .seperateeffect2 {
+    transform: rotate(25deg);
+}
+
+.seperateeffect1, .seperateeffect2 {
+    display: inline-block;
+    transition: transform 0.5s ease; /*  To Add a smooth transition effect */
+}
+
+.section2 {
+    background: radial-gradient(circle, #c14dff, #8100cc);
+    display: flex;
+    color: #ffffff;
+    margin: 3%;
+    border-radius: 5%;
+    padding: 4%;
+    justify-content: space-between;
+}
+.section2img{
+    min-width: 50%;
+}
+.section2img img{
+    margin-top: 30%;
+    width: 100%;
+    height: auto;
+    margin-left: 5%;
+}
+.nutrition-table {
+    margin: 0;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.column {
+    float: left;
+    width: 50%;
+}
+
+.row {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+.row.lastchild{
+    border-bottom: 0px;
+}
+
+.row.header {
+    font-weight: bold;
+}
+
+.column:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.section3{
+    margin: 3%;
+    color: purple;
+    display: flex;
+    font-size: 2.1vh;
+}
+.section3 img{
+    border-radius: 3%;
+    padding: 3%;
+    transition: transform 0.5s ease;
+}
+
+.section3 img:hover{
+    transform: scale(1.1);
+
+}
+
+.section3text{
+    margin: 1%;
+    color:#6900cc;
+    font-family: 'Noto Serif Georgian', sans-serif;
+    font-weight: 600;
+}
+
+footer{
+    display: flex;
+    margin: 3%;
+    background: radial-gradient(circle, #cc9c00, #8b00cc);
+    border-radius: 5%;
+    font-family: 'Nanum Gothic', sans-serif;
+    color: white;
+    height: 250px;
+}
+.footertext{
+    padding: 3%;
+}
+
+footer img{
+    width: 40%;
+}
+
+input,textarea{
+    margin-bottom: 10px;
+    display: flex;
+    width: 50%;
+    margin-top: 1%;
+}
+button{
+    font-family: 'Nanum Gothic', sans-serif;
+    color: white;
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+    background-color: transparent;
+    font-size: 2vh;
+    padding: 1%;
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+    border-radius: 8%;
+    border-color: #f8f8f8;
+
+}
+img{
+    width:100%;
+    height: auto;
+}
+
+@media (max-width: 700px) {
+    .section3{
+      flex-direction: column;
+    }
+    .purple{
+        flex-direction: column;
+        justify-content: left;
+        align-items: flex-start;
+    }
+    .section2{
+        flex-direction: column;
+    }
+    footer{
+        flex-direction: column;
+    }
+  }
